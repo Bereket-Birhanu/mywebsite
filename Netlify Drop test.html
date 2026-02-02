@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Netlify Test Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #ff4d88;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h1>Netlify Drop Test</h1>
+  <p>Click the button to see JavaScript in action!</p>
+  <button id="testBtn">Click Me 💖</button>
+</div>
+
+<script>
+  const btn = document.getElementById("testBtn");
+
+  btn.addEventListener("click", () => {
+    alert("🎉 Success! Your JS works!");
+  });
+</script>
+
+</body>
+</html>
